@@ -1,0 +1,507 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: #2B2F3A; */
+    background-color: #f2e3e0;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    width: 100%;
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+.burgerbtn{
+    display: none;
+    margin-top: 25px;
+    width: 40px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.linksContainer{
+    display: flex;
+}
+
+.linkChild{
+    list-style: none;
+    margin: 0px 15px;
+    color: black;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
+/* Aqui termina el nav */
+
+.bannerContainer{
+    /* background-color: rebeccapurple; */
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.bannerFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.banner{
+    width: 100%;
+    background-color:  #f5c4ba;
+    height: auto;
+    border-radius: 0px 0px 0px 	100px;
+}
+
+.btnContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.description{
+    font-size: 25px;
+}
+
+.buttonContact{
+    width: 125px;
+    height: 45px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+}
+
+.cursoContainer{
+    height: 250px;
+    position: relative;
+}
+
+.wave{
+    position: absolute; /* Posiciona la imagen de forma absoluta dentro del contenedor */
+    bottom: 0;
+    width: 100%;
+}
+
+/* aqui termina lo del banner */
+
+.workingContainer{
+    /* background-color: rgb(123, 255, 0); */
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workingContainer1{
+    margin-top: 100px;
+}
+
+
+.introducción, .primaryText{
+    font-size: 35px;
+    padding: 10px;
+}
+
+.working{
+    /* background-color: rgb(255, 0, 0); */
+    width: 100%;
+    display: flex;
+}
+
+.workingChild{
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textWorking{
+    width: 98%;
+    padding: 10px;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.imgDesktopContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.cursos{
+    width: 100%;
+    height: 450px;
+}
+
+.cardsContainer{
+    margin-top: 100px;
+    height: 300px;
+}
+
+.cardsChild{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card{
+    width: 24%;
+    height: auto;
+    margin-left: 15px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgba(100, 100, 138, 0.3)
+}
+
+
+.circle{
+    /* background-color: rgb(255, 123, 0); */
+    background-color: #ff6a50;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniLogo{
+    height: 40px;
+    width: 40px;
+}
+
+/* aqui termina lo de abajo del banner */
+
+.workingContainer3{
+    margin-top: 400px;
+    display: flex;
+    height: 780px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workingImg{
+    width: 45%;
+    margin-left: 10px;
+    height: 500px;
+}
+
+.working3{
+    margin-top: 0px;
+    height: 400px;
+    width: 800px;
+}
+
+.working1{
+    width: 70%;
+}
+
+.solutions{
+    font-size: 40px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.description{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.slideContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fdb7ab;
+}
+
+.slider {
+    width: 55%;
+    height: auto;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    display: flex;
+    overflow: hidden;  /* Asegúrate de ocultar cualquier desbordamiento */
+    /* position: relative; */
+}
+
+.imgContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgSlider {
+    height: 550px;
+    width: 100%;
+    flex-shrink: 0;  
+}
+
+/* aqui termina el slider */
+
+.footerContainer{
+    background-color: aliceblue;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerChild{
+    width: 30%;
+    padding: 10px;
+}
+
+.footerInfo{
+    display: flex;
+    color: black;
+}
+
+.miniLogoFooter{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.flexFooter{
+    display: flex;
+}
+
+/* Aqui termina el footer */
+.buttonContact:hover{
+    cursor: pointer;
+    background-color: #f89a87;
+    transition: 0.8s;
+}
+
+li:hover{
+    cursor: pointer;
+    color: #ff6a50;
+    transition: 0.3s;;
+}
+
+/* Aqui termina las pseudo clases */
+
+@media(max-width: 860px) {
+
+    body, html {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0; /* Agregado para eliminar cualquier margen que pueda afectar el ancho */
+        padding: 0; /* Agregado para eliminar cualquier padding que pueda afectar el ancho */
+    }
+
+    .burgerbtn {
+        display: block;
+        margin-top: 20px;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .home, .aboutUs, .contacts {
+        display: none;
+    }
+    
+    .nav {
+        width: 100%;  /* Asegúrate de tener width 100% */
+        padding: 0;  /* Elimina padding */
+        margin: 0 auto;  /* Centra el contenido si es necesario */
+        box-sizing: border-box;  /* Incluye padding y border en el width */
+    }
+
+    .bannerContainer{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+
+   .banner{
+    height: 500px;
+    width: 100%;
+    border-radius: 0px;
+   }
+
+   .wave{
+    height: 210px;
+   }
+
+   .btnContainer{
+    flex-direction: column;
+    margin-top: 50px;
+    height: auto;
+   }
+
+   .buttonContact{
+    height: 40px;
+   }
+
+   h1{
+    font-size: 40px;
+   }
+
+   .workingContainer{
+    margin-top: 30px;
+   }
+
+   .workingContainer1{
+    margin-top: 30px;
+   }
+
+   .introducción{
+    font-size: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+   }
+
+   .workingChild{
+    width: 98%;
+   }
+
+   .textWorking{
+    width: 97%;
+    padding: 0px;
+   }
+
+   .text{
+    font-size: 15px;
+    text-align: justify;
+   }
+
+   .primaryText{
+    font-size: 19px;
+    margin-top: 100px;
+   }
+
+   .working{
+    flex-direction: column;
+   }
+
+   .imgDesktopContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+
+   .cursos{
+    border-radius: 50px;
+    width: 80%;
+    height: auto;
+    margin-right: 25px;
+   }
+
+   .cardsContainer{
+    margin-top: 100px;
+   }
+
+   .cardsChild {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .card {
+    width: 50%;
+    margin-top: 10px;
+    height: auto;
+    }
+
+    .workingContainer3{
+        margin-top: 980px;
+    }
+
+    .workingImg{
+        width: 80%;
+        margin-top:30px;
+        height: 350px;
+    }
+
+    .working3{
+        width: 80%;
+    }
+
+    .slideContainer{
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .slider{
+        height: auto;
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    .imgSlider{
+        height: 300px;
+    }
+
+    .footerContainer {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerChild {
+        width: 300px;
+    }
+
+    .flexFooter{
+       width: 100%;
+       justify-content: space-between;
+    }
+}
+
+/* Aqui terminan las media querys */
