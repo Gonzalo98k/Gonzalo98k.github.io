@@ -4,7 +4,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     /* background-color: #2B2F3A; */
-    background-color: #f2e3e0;
+    background-color:  #f5c4ba;
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
@@ -81,6 +81,10 @@ a{
     border-radius: 0px 0px 0px 	100px;
 }
 
+.bannerFlex{
+    height: auto;
+}
+
 .btnContainer{
     width: 100%;
     height: auto;
@@ -93,7 +97,7 @@ h1{
     font-size: 60px;
 }
 
-.description{
+.learn{
     font-size: 25px;
 }
 
@@ -111,6 +115,7 @@ h1{
 .cursoContainer{
     height: 250px;
     position: relative;
+    background-color: #f5c4ba;
 }
 
 .wave{
@@ -122,7 +127,7 @@ h1{
 /* aqui termina lo del banner */
 
 .workingContainer{
-    /* background-color: rgb(123, 255, 0); */
+    background-color: #f5c4ba;
     margin-top: 200px;
     width: 100%;
     display: flex;
@@ -141,7 +146,6 @@ h1{
 }
 
 .working{
-    /* background-color: rgb(255, 0, 0); */
     width: 100%;
     display: flex;
 }
@@ -160,21 +164,21 @@ h1{
 }
 
 .text{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .imgDesktopContainer{
     width: 50%;
     display: flex;
+    height: auto;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    /* background-color: red; */
 }
 
 .cursos{
-    width: 100%;
-    height: 450px;
+    width: 80%;
+    height: 500px;
 }
 
 .cardsContainer{
@@ -195,10 +199,10 @@ h1{
     padding: 8px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    background-color: #ffe2e2;
     align-items: center;
     text-align: center;
-    border: 2px solid rgba(100, 100, 138, 0.3)
+    border: 1px solid black;
 }
 
 
@@ -231,7 +235,7 @@ h1{
 .workingImg{
     width: 45%;
     margin-left: 10px;
-    height: 500px;
+    height: 500px
 }
 
 .working3{
@@ -256,15 +260,102 @@ h1{
     margin-left: 10px;
 }
 
+/* Aqui van los "testimonios" */
+
+.testimonioContainer{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #fdb4a5; */
+}
+
+.testimonialsContainer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialsTitle{
+    font-size: 30px;
+}
+
+.testimonialsFlex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.testimonial{
+    background-color: #fcebeb;
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    border: solid 1px black;
+}
+
+.testimonialImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.testimonialText{
+    padding-left: 8px;
+}
+
+/* aqui va lo de las preguntas frecuentes */
+
+.preguntasFrecuentes{
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 234, 234);
+    display: flex;
+    justify-content: center;
+}
+
+.faqTitle{
+    font-size: 35px;
+}
+
+.titleItem{
+    font-size: 22px;
+}
+
+.faqContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.faqItem{
+    border-bottom: solid 1.5px black;
+    width: 70%;
+}
+
+.parrafoFaq{
+    font-size: 18px;
+}
+
+/* Aqui va el slider */
+
 .slideContainer {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #fdb7ab;
+    background-color: #fcb6a9;
 }
 
 .slider {
@@ -292,7 +383,6 @@ h1{
 
 .footerContainer{
     background-color: aliceblue;
-    margin-top: 50px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -423,7 +513,7 @@ li:hover{
    }
 
    .primaryText{
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 100px;
    }
 
@@ -460,13 +550,19 @@ li:hover{
     }
 
     .workingContainer3{
-        margin-top: 980px;
+        margin-top: 950px;
+        height: 800px;
     }
 
     .workingImg{
         width: 80%;
-        margin-top:30px;
+        margin-top: 100px;
         height: 350px;
+    }
+
+    .solutions{
+        margin-top: 50px;
+        font-size: 30px;
     }
 
     .working3{
@@ -486,6 +582,33 @@ li:hover{
 
     .imgSlider{
         height: 300px;
+    }
+
+    .testimonialsFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonialsTitle{
+        font-size: 25px;
+    }
+
+    .testimonial{
+        width: 200px;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .faqTitle{
+        font-size: 20px;
+    }
+
+    .titleItem{
+        font-size: 15px;
+    }
+
+    .parrafoFaq{
+        font-size: 12px;
     }
 
     .footerContainer {

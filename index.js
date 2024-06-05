@@ -49,5 +49,25 @@ sr.reveal(".working3", {
     distance: "100px"
 });
 
+sr.reveal(".faqItem", {
+    duration: 3000,
+    origin: "left",
+    distance: "100px"
+});
+
+sr.reveal(".testimonioContainer", {
+    duration: 3000,
+    origin: "top",
+    distance: "100px"
+});
+
+sr.reveal(".faqTitle", {
+    duration: 3000,
+    origin: "top",
+    distance: "100px"
+});
+
+
+
 
 
