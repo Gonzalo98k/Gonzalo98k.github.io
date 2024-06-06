@@ -112,35 +112,40 @@ h1{
     background-color: white;
 }
 
-.cursoContainer{
-    height: 250px;
-    position: relative;
-    background-color: #f5c4ba;
-}
-
-.wave{
-    position: absolute; /* Posiciona la imagen de forma absoluta dentro del contenedor */
-    bottom: 0;
-    width: 100%;
-}
-
 /* aqui termina lo del banner */
 
 .workingContainer{
     background-color: #f5c4ba;
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .workingContainer1{
     margin-top: 100px;
 }
 
+.primaryText{
+    display: block;
+    white-space: nowrap;
+    border-right: solid 3px black;
+    width: 33ch;
 
-.introducción, .primaryText{
+    animation: typing 4s steps(33), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width:  0;}
+}
+
+@keyframes blink{
+    50%{border-color: transparent;}
+}
+
+.introducción{
     font-size: 35px;
     padding: 10px;
 }
@@ -455,19 +460,20 @@ li:hover{
 
     .bannerContainer{
         width: 100%;
-        height: auto;
         padding: 0px;
     }
-
-   .banner{
-    height: 500px;
-    width: 100%;
-    border-radius: 0px;
-   }
-
-   .wave{
-    height: 210px;
-   }
+    
+    .bannerContainer{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .banner{
+     height: auto;
+     width: 100%;
+     border-radius: 0px;
+     height: 520px;
+    }
 
    .btnContainer{
     flex-direction: column;
@@ -484,11 +490,11 @@ li:hover{
    }
 
    .workingContainer{
-    margin-top: 30px;
+    margin-top: 50px;
    }
 
    .workingContainer1{
-    margin-top: 30px;
+    margin-top: 100px;
    }
 
    .introducción{
@@ -513,8 +519,9 @@ li:hover{
    }
 
    .primaryText{
-    font-size: 18px;
-    margin-top: 100px;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 0px;
    }
 
    .working{
@@ -608,7 +615,7 @@ li:hover{
     }
 
     .parrafoFaq{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .footerContainer {
